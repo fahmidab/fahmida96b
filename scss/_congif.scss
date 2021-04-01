@@ -1,0 +1,18 @@
+// varibles
+$website-width: 1280px;
+$main-color: #857aff;
+$light-color: rgb(248, 228, 126);
+$medium-color: rgb(255, 255, 255);
+$dark-color: rgb(0, 0, 0);
+
+
+// set text color
+@function set-text-color($color) {
+  @if(lightness($color) > 50) {
+    @return #000;
+  }
+@else
+  {
+    @return #fff;
+  }
+}
